@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DED7D7;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    max-width: 400px;
+    background-color: #747171;
+    border-radius: 5px;
+    
+}
+
+.calc {
+    padding: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.63);
+    
+}
+
+.res {
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 10px 1px 30px rgba(0, 0, 0, 0.274);
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.btn {
+    height: 90px;
+    font-size: 2.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.274);
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+     background-color: rgb(134, 134, 153);
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 10px rgba(15, 15, 15, 0.644);
+}
+
+.eq {
+    background-color: rgba(108, 108, 243, 0.719);
+    
+}
+
+.eq:hover {
+    background-color: rgb(81, 81, 243);
+}
+
+.op {
+    background-color: rgba(46, 46, 54, 0.61);
+}
+
+.op:hover {
+    background-color: rgb(134, 134, 153);
+}
