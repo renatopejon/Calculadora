@@ -143,6 +143,12 @@ function corrige() {
 
 function igual2() {
     let igual = eval(res.textContent)
+    if (igual == 13) {
+        res.innerHTML = `<img src="lula.png" alt="" width = "300">`
+    } else if (igual == 17) {
+        res.innerHTML = `<img src="bozo.jpg" alt="" width = "300">`
+    } else {
     res.innerHTML = `= ${igual}`
+    }
 }
 
