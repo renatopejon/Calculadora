@@ -106,35 +106,50 @@ function zer0() {
 }
 
 function virg() {
-    
-    if (res.textContent == 0) {
-    } else {
-        res.innerHTML += '.'
+    let verif = res.textContent.slice(res.textContent.length - 1)
+    if (verif != ' ' && verif != '.') {
+        if (res.textContent != 0) {
+            res.innerHTML += '.'
+        } 
     }
 }
 
 function soma() {
-    if (res.textContent != 0) {
-        res.innerHTML += ' + '
-    } 
+    let verif = res.textContent.slice(res.textContent.length - 1)
+    if (verif != ' ' || verif == '.') {
+        if (res.textContent != 0) {
+            res.innerHTML += ' + '
+        } 
+    }
+    
 }
 
 function subt() {
-    if (res.textContent != 0) {
-        res.innerHTML += ' - '
-    } 
+    let verif = res.textContent.slice(res.textContent.length - 1)
+    if (verif != ' ' || verif == '.') {
+        if (res.textContent != 0) {
+            res.innerHTML += ' - '
+        } 
+    }
+    
 }
 
 function mult() {
-    if (res.textContent != 0) {
-        res.innerHTML += ' * '
-    } 
+    let verif = res.textContent.slice(res.textContent.length - 1)
+    if (verif != ' ' || verif == '.') {
+        if (res.textContent != 0) {
+            res.innerHTML += ' * '
+        } 
+    }
 }
 
 function divi() {
-    if (res.textContent != 0) {
-        res.innerHTML += ' / '
-    } 
+    let verif = res.textContent.slice(res.textContent.length - 1)
+    if (verif != ' ' || verif == '.') {
+        if (res.textContent != 0) {
+            res.innerHTML += ' / '
+        } 
+    }
 }
 
 function corrige() {
@@ -142,13 +157,16 @@ function corrige() {
 }
 
 function igual2() {
-    let igual = eval(res.textContent)
-    if (igual == 13) {
-        res.innerHTML = `<img src="lula.png" alt="" width = "300">`
-    } else if (igual == 17) {
-        res.innerHTML = `<img src="bozo.jpg" alt="" width = "300">`
-    } else {
-    res.innerHTML = `= ${igual}`
-    }
+    let verif = res.textContent.slice(res.textContent.length - 1)
+    if (verif != ' ' || verif == '.') {
+        let igual = eval(res.textContent)
+        if (igual == 13) {
+            res.innerHTML = `<img src="lula.png" alt="" width = "300">`
+        } else if (igual == 17) {
+            res.innerHTML = `<img src="bozo.jpg" alt="" width = "300">`
+        } else {
+        res.innerHTML = `= ${igual}`
+        }
+    } 
 }
 
